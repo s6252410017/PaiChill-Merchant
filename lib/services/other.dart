@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:shop_paicill_app/views/loginpage_ui.dart';
 
 class OtherServices {
   //savetoSP
@@ -20,10 +21,10 @@ class OtherServices {
   showWarningDialog(context, msg) {
     Alert(
         context: context,
-        title: "Error",
+        title: "Success", //Error
         desc: msg,
         image: Image.asset(
-          "assets/images/warning-icon.png",
+          "assets/images/true.png",
           width: 150,
         ),
         buttons: [
@@ -32,8 +33,13 @@ class OtherServices {
               "OK",
               style: TextStyle(color: Colors.white, fontSize: 20),
             ),
-            onPressed: () => Navigator.pop(context),
-            color: Color.fromARGB(255, 34, 184, 96),
+            onPressed: () =>  Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => LoginPageUI(),
+                        ),
+                      ),
+            color: Color(0xffb98068),
             radius: BorderRadius.circular(5.0),
           ),
         ]).show();

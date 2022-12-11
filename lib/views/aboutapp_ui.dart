@@ -52,6 +52,7 @@ class AboutApp extends StatelessWidget {
                     'Paichill Merchant apps can be manage, administrate, and view shop data.',
                     style: TextStyle(
                       fontSize: 20,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                   Divider(height: 32),
@@ -77,6 +78,7 @@ class AboutApp extends StatelessWidget {
                     'This application constitutes part of the thesis.',
                     style: TextStyle(
                       fontSize: 20,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ],

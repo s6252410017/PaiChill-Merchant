@@ -68,7 +68,7 @@ class _ViewFeedbackUIState extends State<ViewFeedbackUI> {
                   SizedBox(
                     height: 20,
                   ),
-                  documentSnapshot['shopid'] == widget.docId
+                  documentSnapshot["shopid"] == widget.docId
                       ? Container(
                           height: 170.0,
                           child: Card(
@@ -98,7 +98,7 @@ class _ViewFeedbackUIState extends State<ViewFeedbackUI> {
                                         height: 30.0,
                                         alignment: Alignment.bottomLeft,
                                         child: Text(
-                                          documentSnapshot['name'],
+                                          documentSnapshot["name"],
                                           style: TextStyle(
                                               fontWeight: FontWeight.bold,
                                               fontSize: 15.0),
@@ -112,7 +112,7 @@ class _ViewFeedbackUIState extends State<ViewFeedbackUI> {
                                         height: 30.0,
                                         alignment: Alignment.bottomRight,
                                         child: Text(
-                                          documentSnapshot['date'],
+                                          documentSnapshot["date"],
                                           style: TextStyle(
                                               fontWeight: FontWeight.bold,
                                               fontSize: 15.0),
@@ -137,7 +137,7 @@ class _ViewFeedbackUIState extends State<ViewFeedbackUI> {
                                         width: 340.0,
                                         height: 40.0,
                                         child: Text(
-                                          documentSnapshot['comment'],
+                                          documentSnapshot["comment"],
                                           style: TextStyle(
                                               fontWeight: FontWeight.bold,
                                               fontSize: 15.0),
@@ -151,7 +151,7 @@ class _ViewFeedbackUIState extends State<ViewFeedbackUI> {
                                   alignment: Alignment.bottomCenter,
                                   child: RatingBarIndicator(
                                     rating:
-                                        double.parse(documentSnapshot['score']),
+                                        double.parse(documentSnapshot["score"]),
                                     itemCount: 5,
                                     itemSize: 20.0,
                                     physics: BouncingScrollPhysics(),

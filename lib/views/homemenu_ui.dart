@@ -5,6 +5,7 @@ import 'package:shop_paicill_app/views/loginpage_ui.dart';
 import 'package:shop_paicill_app/views/setting_ui.dart';
 import 'package:shop_paicill_app/views/detailshop_ui.dart';
 import 'package:shop_paicill_app/views/viewfeedback_ui.dart';
+import 'detailshop1_ui.dart';
 import 'editshop_ui.dart';
 import 'mainmenu_ui.dart';
 
@@ -65,7 +66,7 @@ class _HomeMenuUIState extends State<HomeMenuUI> {
                    Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => DetailShopUI(docId: '',),
+                          builder: (context) => DetailShop1UI(),
                         ),
                       );
                  },
@@ -101,7 +102,7 @@ class _HomeMenuUIState extends State<HomeMenuUI> {
                    Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => ViewFeedbackUI(docId: '',),
+                          builder: (context) => FeedBackUI(docId: '',),
                         ),
                       );
                 },

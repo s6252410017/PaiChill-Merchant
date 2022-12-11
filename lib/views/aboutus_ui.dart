@@ -52,6 +52,7 @@ class AboutUs extends StatelessWidget {
                     'Terasak Treepak 6252410017',
                     style: TextStyle(
                       fontSize: 20,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                     SizedBox(height: 16),
@@ -59,6 +60,7 @@ class AboutUs extends StatelessWidget {
                     'Apisit     Kulkham \n6252410001',
                     style: TextStyle(
                       fontSize: 20,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                   //Divider(height: 32),

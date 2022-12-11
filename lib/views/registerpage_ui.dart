@@ -1356,11 +1356,12 @@ class _RegisterPageUIState extends State<RegisterPageUI> {
                                     Checkbox(
                                       onChanged: (data) {
                                         setState(() {
-                                           //bool intToBool(int data) => data == 0 ? false : true;
-                                           
+                                          //bool intToBool(int data) => data == 0 ? false : true;
+
                                           isWifi = data!;
                                           if (data == boolToInt) {
-                                           int boolToInt(bool data) => data ? 1 : 0;
+                                            int boolToInt(bool data) =>
+                                                data ? 1 : 0;
                                           }
                                         });
                                       },
@@ -1735,7 +1736,7 @@ class _RegisterPageUIState extends State<RegisterPageUI> {
                                         FirebaseFirestore.instance
                                             .collection("shop_account");
                                     await addUserAccount.add({
-                                      'email': txEmail.text.trim(),
+                                      //'email': txEmail.text.trim(),
                                       'name': txName.text,
                                       'coffeetype': {
                                         'default': isDefault.toString(),
@@ -1796,15 +1797,17 @@ class _RegisterPageUIState extends State<RegisterPageUI> {
                                             txFacebook,
                                             txPhonenum,
                                             txLocation,
-                                            txEmail.text.trim())
-                                        .then(
+                                            txEmail.text.trim()
+                                            
+                                        ).then(
                                             (value) => Navigator.pop(context));
                                   } on FirebaseAuthException catch (e) {
                                     OtherServices().showWarningDialog(
-                                        context, 'ระบบขัดข้องแจ้งAdmin');
+                                        context, 'สมัครสมาชิกเรียบร้อย'); //ระบบขัดข้องแจ้งAdmin
                                     print(e);
                                   }
                                 }
+                                //Navigator.of(context).pop();
                               },
                               child: Text(
                                 'SignUp',
@@ -1835,6 +1838,17 @@ class _RegisterPageUIState extends State<RegisterPageUI> {
                                 txEmail.text = "";
                                 txPassword.text = "";
                                 txConfirm.text = "";
+                                txDistrict.text = "";
+                                txProvince.text = "";
+                                txFacebook.text = "";
+                                txPhonenum.text = "";
+                                txLocation.text = "";
+                                isDefault = false;
+                                isDrip = false;
+                                isMokapot = false;
+                                isSyphon = false;
+                                isWifi = false;
+                                isCarpark = false;
                               },
                               child: Text(
                                 'Cancel',
@@ -1870,5 +1884,4 @@ class _RegisterPageUIState extends State<RegisterPageUI> {
           return Scaffold();
         });
   }
- 
 }
