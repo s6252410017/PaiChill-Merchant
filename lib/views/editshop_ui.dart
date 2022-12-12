@@ -6,9 +6,11 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:location/location.dart';
+import 'package:shop_paicill_app/views/mainmenu_ui.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../models/listid.dart';
+import 'mainmenu_ui.dart';
 import '../models/user_data.dart';
 
 class EditshopUI extends StatefulWidget {
@@ -1511,7 +1513,51 @@ class _EditshopUIState extends State<EditshopUI> {
                       ]),
                 ),
               ),
-              SizedBox(
+          
+                 //เริ่ม ปุ่มออกจากระบบ
+            Padding(
+              padding: const EdgeInsets.only(
+                left: 50.0,
+                right: 50.0,
+                top: 20,
+              ),
+              child: SizedBox(
+                width: 260,
+                height: 45,
+                child: ElevatedButton.icon(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => MainMenuUI(),
+                      ),
+                    );
+                  },
+                  icon: Icon(
+                    Icons.save_as_outlined,
+                    color: Colors.white,
+                  ),
+                  label: Text(
+                    'Save',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 15.0,
+                    ),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                      elevation: 10.0,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(
+                          5.0,
+                        ),
+                      ),
+                      backgroundColor: Color(0xffb98068)),
+                ),
+              ),
+            ),
+            //ปิด ปุ่มออกจากระบบ
+                SizedBox(
                 height: 50.0,
               ),
             ],

@@ -100,7 +100,7 @@ class _DetailShop1UIState extends State<DetailShop1UI> {
                       height: 192.0,
                       width: MediaQuery.of(context).size.width,
                       image: AssetImage(
-                        'assets/images/IMGshop.jpg',
+                        'assets/images/ShopHead.jpg',
                       ),
                       fit: BoxFit.cover,
                     ),
@@ -173,7 +173,7 @@ class _DetailShop1UIState extends State<DetailShop1UI> {
                               height: 192.0,
                               width: 340.0,
                               image: AssetImage(
-                                'assets/images/Shop.png',
+                                'assets/images/Shop2.jpg',
                               ),
                               fit: BoxFit.cover,
                             ),
@@ -198,7 +198,7 @@ class _DetailShop1UIState extends State<DetailShop1UI> {
                               height: 192.0,
                               width: 340.0,
                               image: AssetImage(
-                                'assets/images/Shop.png',
+                                'assets/images/Shop3.jpg',
                               ),
                               fit: BoxFit.cover,
                             ),
@@ -223,7 +223,7 @@ class _DetailShop1UIState extends State<DetailShop1UI> {
                               height: 192.0,
                               width: 340.0,
                               image: AssetImage(
-                                'assets/images/Shop.png',
+                                'assets/images/Shop4.jpg',
                               ),
                               fit: BoxFit.cover,
                             ),
@@ -416,7 +416,7 @@ class _DetailShop1UIState extends State<DetailShop1UI> {
                                   height: 190.0,
                                   width: 150.0,
                                   image: AssetImage(
-                                    'assets/images/pro1.png',
+                                    'assets/images/pro1.jpg',
                                   ),
                                   fit: BoxFit.cover,
                                 ),
@@ -444,7 +444,7 @@ class _DetailShop1UIState extends State<DetailShop1UI> {
                                   height: 190.0,
                                   width: 150.0,
                                   image: AssetImage(
-                                    'assets/images/pro2.png',
+                                    'assets/images/pro2.jpg',
                                   ),
                                   fit: BoxFit.cover,
                                 ),
@@ -472,7 +472,7 @@ class _DetailShop1UIState extends State<DetailShop1UI> {
                                   height: 190.0,
                                   width: 150.0,
                                   image: AssetImage(
-                                    'assets/images/pro3.png',
+                                    'assets/images/pro3.jpg',
                                   ),
                                   fit: BoxFit.cover,
                                 ),
@@ -500,7 +500,7 @@ class _DetailShop1UIState extends State<DetailShop1UI> {
                                   height: 190.0,
                                   width: 150.0,
                                   image: AssetImage(
-                                    'assets/images/pro4.png',
+                                    'assets/images/pro4.jpg',
                                   ),
                                   fit: BoxFit.cover,
                                 ),
@@ -528,7 +528,7 @@ class _DetailShop1UIState extends State<DetailShop1UI> {
                                   height: 190.0,
                                   width: 150.0,
                                   image: AssetImage(
-                                    'assets/images/pro1.png',
+                                    'assets/images/pro5.jpg',
                                   ),
                                   fit: BoxFit.cover,
                                 ),
@@ -678,7 +678,7 @@ class _DetailShop1UIState extends State<DetailShop1UI> {
                                 width: 150.0,
                                 alignment: Alignment.bottomLeft,
                                 child: Text(
-                                  'Bk/BangKhae',
+                                  'Bangkok/BangKhae',
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                   ),
